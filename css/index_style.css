@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+     
+}
+
+nav{
+    background: #99c2ff;
+    height: 80px;
+    width: 100%;
+    /* opacity: 0.7; */
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    padding-left: 9%;
+    white-space: nowrap;
+
+}
+
+nav ul{
+
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+a:active,a:hover{
+    background-color: transparent;
+    color: #000;
+    
+    transition: 0.6s ease;
+}
+
+.title{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    
+}
+
+.title-bottom h3{
+    color: #99c2ff;
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: .8;
+}
+
+.title-bottom{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    
+}
+
+.title h1{
+    color: black;
+    font-size: 70px;
+    white-space: nowrap;
+}
+
+.Button{
+
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    color: #99c2ff;
+    
+
+}
+
+.btn{
+
+    border: 1px solid #ffff;
+    border-radius: 25px;
+    background: #99c2ff;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    white-space: nowrap;
+
+    transition: 0.6s ease;
+
+}
+
+
+.btn:hover{
+
+    background-color: transparent;
+    color: #000;
+}
+
+.logo-image img{
+
+    position: absolute;
+
+    float: left;
+    width: 140px;
+    
+    height: 100px;
+    top: -1%;
+}
+
+#bg-slide{
+
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    backface-visibility: hidden;
+    animation: slideBg 10s linear infinite 0s;
+    animation-timing-function:  ease-in-out;
+    background-image: url('../images/1.jpg');
+
+}
+
+@keyframes slideBg{
+
+    0% { 
+        background-image: url('../images/1.jpg');
+    }
+
+    25% { 
+        background-image: url('../images/2.jpg');
+    }
+
+    50% { 
+        background-image: url('../images/2.jpg');
+    }
+
+    75% { 
+        background-image: url('../images/3.jpeg');
+    }
+
+    100% { 
+        background-image: url('../images/1.jpg');
+    }
+
+    
+
+    
+}
+
